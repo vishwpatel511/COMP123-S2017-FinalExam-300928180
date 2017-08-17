@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 
 /*
- * Name: Tom Tsiliopoulos
- * Date: July 27, 2017
+ * Name: Vishw Patel
+ * Student ID: 300928180
+ * Date: July 17, 2017
  * Description: This is the Hand class
  * It inherits from the CardList Abstract class
  * Version: 0.1 - Created the Hand class

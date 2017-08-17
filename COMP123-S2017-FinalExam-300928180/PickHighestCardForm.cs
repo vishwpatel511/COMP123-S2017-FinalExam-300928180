@@ -397,5 +397,10 @@ namespace COMP123_S2017_FinalExam_300928180
         {
             Application.Exit();
         }
+
+        private void TimeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

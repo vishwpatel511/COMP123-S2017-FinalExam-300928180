@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 
 /*
- * Name: Tom Tsiliopoulos
+ * Name: Vishw Patel
+ * Student ID: 300928180
  * Date: July 25, 2017
  * Description: This is the Face enum
  * Version: 0.1 - Created the Face enum
