@@ -35,6 +35,11 @@
             this.UserMessageTextBox = new System.Windows.Forms.TextBox();
             this.ResetButton = new System.Windows.Forms.Button();
             this.CardFlipTimer = new System.Windows.Forms.Timer(this.components);
+            this.FifthCardPictureBox = new System.Windows.Forms.PictureBox();
+            this.FourthCardPictureBox = new System.Windows.Forms.PictureBox();
+            this.ThirdCardPictureBox = new System.Windows.Forms.PictureBox();
+            this.SecondCardPictureBox = new System.Windows.Forms.PictureBox();
+            this.FirstCardPictureBox = new System.Windows.Forms.PictureBox();
             this.ScoreTextBox = new System.Windows.Forms.TextBox();
             this.ScoreLabel = new System.Windows.Forms.Label();
             this.TimeLabel = new System.Windows.Forms.Label();
@@ -43,11 +48,6 @@
             this.ExitButton = new System.Windows.Forms.Button();
             this.FinalScoreTextBox = new System.Windows.Forms.TextBox();
             this.FinalScoreLabel = new System.Windows.Forms.Label();
-            this.FifthCardPictureBox = new System.Windows.Forms.PictureBox();
-            this.FourthCardPictureBox = new System.Windows.Forms.PictureBox();
-            this.ThirdCardPictureBox = new System.Windows.Forms.PictureBox();
-            this.SecondCardPictureBox = new System.Windows.Forms.PictureBox();
-            this.FirstCardPictureBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FifthCardPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FourthCardPictureBox)).BeginInit();
@@ -101,7 +101,7 @@
             this.UserMessageTextBox.Location = new System.Drawing.Point(12, 75);
             this.UserMessageTextBox.Name = "UserMessageTextBox";
             this.UserMessageTextBox.ReadOnly = true;
-            this.UserMessageTextBox.Size = new System.Drawing.Size(558, 30);
+            this.UserMessageTextBox.Size = new System.Drawing.Size(558, 38);
             this.UserMessageTextBox.TabIndex = 3;
             this.UserMessageTextBox.TabStop = false;
             this.UserMessageTextBox.Text = "Click the Deal Button!";
@@ -121,97 +121,6 @@
             // 
             this.CardFlipTimer.Interval = 16;
             this.CardFlipTimer.Tick += new System.EventHandler(this.CardFlipTimer_Tick);
-            // 
-            // ScoreTextBox
-            // 
-            this.ScoreTextBox.BackColor = System.Drawing.Color.Black;
-            this.ScoreTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ScoreTextBox.ForeColor = System.Drawing.Color.White;
-            this.ScoreTextBox.Location = new System.Drawing.Point(139, 12);
-            this.ScoreTextBox.Name = "ScoreTextBox";
-            this.ScoreTextBox.ReadOnly = true;
-            this.ScoreTextBox.Size = new System.Drawing.Size(151, 30);
-            this.ScoreTextBox.TabIndex = 5;
-            this.ScoreTextBox.TabStop = false;
-            this.ScoreTextBox.Text = "0";
-            // 
-            // ScoreLabel
-            // 
-            this.ScoreLabel.AutoSize = true;
-            this.ScoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScoreLabel.ForeColor = System.Drawing.Color.White;
-            this.ScoreLabel.Location = new System.Drawing.Point(12, 12);
-            this.ScoreLabel.Name = "ScoreLabel";
-            this.ScoreLabel.Size = new System.Drawing.Size(99, 31);
-            this.ScoreLabel.TabIndex = 6;
-            this.ScoreLabel.Text = "Score:";
-            // 
-            // TimeLabel
-            // 
-            this.TimeLabel.AutoSize = true;
-            this.TimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeLabel.ForeColor = System.Drawing.Color.White;
-            this.TimeLabel.Location = new System.Drawing.Point(296, 12);
-            this.TimeLabel.Name = "TimeLabel";
-            this.TimeLabel.Size = new System.Drawing.Size(87, 31);
-            this.TimeLabel.TabIndex = 8;
-            this.TimeLabel.Text = "Time:";
-            // 
-            // TimeTextBox
-            // 
-            this.TimeTextBox.BackColor = System.Drawing.Color.Black;
-            this.TimeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TimeTextBox.ForeColor = System.Drawing.Color.White;
-            this.TimeTextBox.Location = new System.Drawing.Point(423, 12);
-            this.TimeTextBox.Name = "TimeTextBox";
-            this.TimeTextBox.ReadOnly = true;
-            this.TimeTextBox.Size = new System.Drawing.Size(151, 30);
-            this.TimeTextBox.TabIndex = 7;
-            this.TimeTextBox.TabStop = false;
-            this.TimeTextBox.Text = "30";
-            this.TimeTextBox.TextChanged += new System.EventHandler(this.TimeTextBox_TextChanged);
-            // 
-            // CountDownTimer
-            // 
-            this.CountDownTimer.Interval = 1000;
-            this.CountDownTimer.Tick += new System.EventHandler(this.CountDownTimer_Tick);
-            // 
-            // ExitButton
-            // 
-            this.ExitButton.Location = new System.Drawing.Point(399, 436);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(171, 52);
-            this.ExitButton.TabIndex = 9;
-            this.ExitButton.Text = "Exit";
-            this.ExitButton.UseVisualStyleBackColor = true;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
-            // 
-            // FinalScoreTextBox
-            // 
-            this.FinalScoreTextBox.BackColor = System.Drawing.Color.Black;
-            this.FinalScoreTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FinalScoreTextBox.ForeColor = System.Drawing.Color.White;
-            this.FinalScoreTextBox.Location = new System.Drawing.Point(229, 329);
-            this.FinalScoreTextBox.Name = "FinalScoreTextBox";
-            this.FinalScoreTextBox.ReadOnly = true;
-            this.FinalScoreTextBox.Size = new System.Drawing.Size(171, 30);
-            this.FinalScoreTextBox.TabIndex = 10;
-            this.FinalScoreTextBox.TabStop = false;
-            this.FinalScoreTextBox.Text = "0";
-            this.FinalScoreTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.FinalScoreTextBox.Visible = false;
-            // 
-            // FinalScoreLabel
-            // 
-            this.FinalScoreLabel.AutoSize = true;
-            this.FinalScoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FinalScoreLabel.ForeColor = System.Drawing.Color.White;
-            this.FinalScoreLabel.Location = new System.Drawing.Point(12, 328);
-            this.FinalScoreLabel.Name = "FinalScoreLabel";
-            this.FinalScoreLabel.Size = new System.Drawing.Size(171, 31);
-            this.FinalScoreLabel.TabIndex = 11;
-            this.FinalScoreLabel.Text = "Final Score:";
-            this.FinalScoreLabel.Visible = false;
             // 
             // FifthCardPictureBox
             // 
@@ -279,6 +188,96 @@
             this.FirstCardPictureBox.Visible = false;
             this.FirstCardPictureBox.Click += new System.EventHandler(this.CardPictureBox_Click);
             // 
+            // ScoreTextBox
+            // 
+            this.ScoreTextBox.BackColor = System.Drawing.Color.Black;
+            this.ScoreTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ScoreTextBox.ForeColor = System.Drawing.Color.White;
+            this.ScoreTextBox.Location = new System.Drawing.Point(139, 12);
+            this.ScoreTextBox.Name = "ScoreTextBox";
+            this.ScoreTextBox.ReadOnly = true;
+            this.ScoreTextBox.Size = new System.Drawing.Size(151, 38);
+            this.ScoreTextBox.TabIndex = 5;
+            this.ScoreTextBox.TabStop = false;
+            this.ScoreTextBox.Text = "0";
+            // 
+            // ScoreLabel
+            // 
+            this.ScoreLabel.AutoSize = true;
+            this.ScoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScoreLabel.ForeColor = System.Drawing.Color.White;
+            this.ScoreLabel.Location = new System.Drawing.Point(12, 12);
+            this.ScoreLabel.Name = "ScoreLabel";
+            this.ScoreLabel.Size = new System.Drawing.Size(121, 39);
+            this.ScoreLabel.TabIndex = 6;
+            this.ScoreLabel.Text = "Score:";
+            // 
+            // TimeLabel
+            // 
+            this.TimeLabel.AutoSize = true;
+            this.TimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeLabel.ForeColor = System.Drawing.Color.White;
+            this.TimeLabel.Location = new System.Drawing.Point(296, 12);
+            this.TimeLabel.Name = "TimeLabel";
+            this.TimeLabel.Size = new System.Drawing.Size(107, 39);
+            this.TimeLabel.TabIndex = 8;
+            this.TimeLabel.Text = "Time:";
+            // 
+            // TimeTextBox
+            // 
+            this.TimeTextBox.BackColor = System.Drawing.Color.Black;
+            this.TimeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TimeTextBox.ForeColor = System.Drawing.Color.White;
+            this.TimeTextBox.Location = new System.Drawing.Point(423, 12);
+            this.TimeTextBox.Name = "TimeTextBox";
+            this.TimeTextBox.ReadOnly = true;
+            this.TimeTextBox.Size = new System.Drawing.Size(151, 38);
+            this.TimeTextBox.TabIndex = 7;
+            this.TimeTextBox.TabStop = false;
+            this.TimeTextBox.Text = "30";
+            // 
+            // CountDownTimer
+            // 
+            this.CountDownTimer.Interval = 1000;
+            this.CountDownTimer.Tick += new System.EventHandler(this.CountDownTimer_Tick);
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(399, 436);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(171, 52);
+            this.ExitButton.TabIndex = 9;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // FinalScoreTextBox
+            // 
+            this.FinalScoreTextBox.BackColor = System.Drawing.Color.Black;
+            this.FinalScoreTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FinalScoreTextBox.ForeColor = System.Drawing.Color.White;
+            this.FinalScoreTextBox.Location = new System.Drawing.Point(229, 329);
+            this.FinalScoreTextBox.Name = "FinalScoreTextBox";
+            this.FinalScoreTextBox.ReadOnly = true;
+            this.FinalScoreTextBox.Size = new System.Drawing.Size(171, 38);
+            this.FinalScoreTextBox.TabIndex = 10;
+            this.FinalScoreTextBox.TabStop = false;
+            this.FinalScoreTextBox.Text = "0";
+            this.FinalScoreTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.FinalScoreTextBox.Visible = false;
+            // 
+            // FinalScoreLabel
+            // 
+            this.FinalScoreLabel.AutoSize = true;
+            this.FinalScoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FinalScoreLabel.ForeColor = System.Drawing.Color.White;
+            this.FinalScoreLabel.Location = new System.Drawing.Point(12, 328);
+            this.FinalScoreLabel.Name = "FinalScoreLabel";
+            this.FinalScoreLabel.Size = new System.Drawing.Size(211, 39);
+            this.FinalScoreLabel.TabIndex = 11;
+            this.FinalScoreLabel.Text = "Final Score:";
+            this.FinalScoreLabel.Visible = false;
+            // 
             // PickHighestCardForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -336,4 +335,3 @@
         private System.Windows.Forms.Label FinalScoreLabel;
     }
 }
-

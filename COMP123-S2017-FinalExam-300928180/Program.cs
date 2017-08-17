@@ -6,10 +6,10 @@ using System.Windows.Forms;
 
 /*
  * Name: Vishw Patel
- * Student ID: 300928180
- * Date: July 17, 2017
- * Description: This is the Suit enum
- * Version: 0.1 - Created the Suit enum
+ * Date: August 17, 2017
+ * StudentID: 300928180
+ * Description: This is the driver class for pickHighestCard class.
+ * Version 0.1 : It runs the SplashForm.
  */
 
 namespace COMP123_S2017_FinalExam_300928180
@@ -24,7 +24,7 @@ namespace COMP123_S2017_FinalExam_300928180
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PickHighestCardForm());
+            Application.Run(new SplashForm());
         }
     }
 }
